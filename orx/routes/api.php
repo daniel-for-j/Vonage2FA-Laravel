@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
-});
+}); 
 
 Route::get('{token_id}/get-nft-cards', 'NftController\nftCardController@getNftCards');
 Route::post('{token_id}/post-wallet-address', 'NftController\nftCardController@postWalletAddress');
